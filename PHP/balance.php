@@ -4,6 +4,7 @@ class Balance extends Conexion{
     public function alta($fechainicio,$fechafin,$total){
         $this->sentencia="INSERT INTO balance VALUES (null,'$fechainicio','$fechafin','$total')";
         $this->ejecutarSentencia();
+       // echo $this->sentencia;
     }
         public function eliminar ($id){
             $this->sentencia = "DELETE FROM balance WHERE IDbalance=$id";

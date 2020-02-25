@@ -6,11 +6,11 @@ Fecha de finalizacion:
 <input type="date" name="fechafin">
 <br>
 Total: <input type="text" name="total" placeholder="Total "><br>
-<input type="submit" name="balance" value="Guardar Balance">
+<input type="submit" name="alta" value="Guardar Balance">
 </form>
 <?php
 if(isset($_POST["alta"])){
-    $fechaincio=$_POST["fechainicio"];
+    $fechainicio=$_POST["fechainicio"];
     $fechafin=$_POST["fechafin"];
     $total=$_POST["total"];
     require_once("balance.php");
